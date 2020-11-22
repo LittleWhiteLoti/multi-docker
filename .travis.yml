@@ -18,4 +18,4 @@ after_success:
   - docker push littlewhiteloti/multi-client
   - docker push littlewhiteloti/multi-nginx
   - docker push littlewhiteloti/multi-server
-  - docker push littlewhiteloti.multi-worker
+  - docker push littlewhiteloti/multi-worker
