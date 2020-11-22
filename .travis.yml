@@ -15,7 +15,7 @@ after_success:
   - docker build -t littlewhiteloti/multi-server ./server ./server
   - docker build -t littlewhiteloti.multi-worker ./worker ./worker
   # - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASS" docker.io
+  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" -p "$DOCKER_PASS" docker.io
   - docker push littlewhiteloti/multi-client
   - docker push littlewhiteloti/multi-nginx
   - docker push littlewhiteloti/multi-server
